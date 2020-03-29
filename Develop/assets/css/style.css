@@ -1,16 +1,12 @@
-/* Create a box that wraps the whole page */
+/* Create a box that wraps the whole page, and makes the function accesible to old browser*/
 * {
+   -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
-}
-
-/* Set the color of the top of the page, above the image blue and its text white */
-.header {
-    padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #2a607c;
-    color: #ffffff;
+    margin-left: auto;
+    margin-right: auto;
+    width: block;
 }
 
 /* Set the background color of the body of the page grey */
@@ -18,29 +14,48 @@ body {
     background-color: #d9dcd6;
 }
 
+/* Set the color of the top of the page, above the main image, blue and its text white */
+.header {
+    padding: 2%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+    display: flex;
+    width: 100%;
+    height: 10%;
+    min-width: 0px;
+    min-height: 0px;
+    overflow: hidden;
+}
+
 /* Set the Page header "Horiseon" and the "subpages" aligned and within the blue box */
 h1 {
-    display: inline-block;
+    display: inline-flex;
     font-size: 48px;
 }
+
 /* Change the color of "seo" within the word Horiseon grey */
 .seo {
     color: #d9dcd6;
 }
+
 /* Sets marings/distance of text from edges of the box. Sets text-font and size. It sets different font options in case the browser doesn't support one of them */
 .header div {
-    padding-top: 15px;
-    margin-right: 20px;
+    padding-top: 2%;
+    margin-right: 0.1%;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
+
 /* Eliminates the markers in front of our list */
 .header div li {
     list-style-type: none;
     display: inline-block;
-    margin-left: 25px;
+    margin-left: 50px;
+    margin-right: 10px;
 }
+
 /* Sets the color of the hyperlinks white and eliminates the default underline */
 a {
     color: #ffffff;
@@ -51,17 +66,18 @@ a {
 .hero {
     height: 800px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 2%;
     background-image: url("../images/digital-marketing-meeting.jpg");
     background-size: cover;
     background-position: center;
+    box-sizing: border-box;
 }
 
-/* Allows content boxes to be aligned on the left -horizontals- and on the right -vertical- */ 
+/* Allows content boxes to be aligned on the left -search-engine; social-media; online-reput.- and on the right -benefits-  */
 .content {
     width: 75%;
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 2%;
 }
 
 /* Sets the font-size of all paragraphs on the page*/
@@ -72,97 +88,111 @@ p {
 /* float-left and -right align our images and text of the subpages/ content boxes we have */
 .float-left {
     float: left;
-    margin-right: 25px;
+    margin-right: 2%;
 }
 
 .float-right {
     float: right;
-    margin-left: 25px;
+    margin-left: 2%;
 }
 
 /* Modifies the container box of Search Engine optimization */
 .search-engine-optimization {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    margin-bottom: 2%;
+    padding: 2%;
+    height: 25%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 /* Modifies the container box of Online reputation management */
 .online-reputation-management {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    margin-bottom: 2%;
+    padding: 2%;
+    height: 25%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 /* Modifies the container box of Social media marketing */
 .social-media-marketing {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+    margin-bottom: 2%;
+    padding: 2%;
+    height: 25%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 } 
+
 
 /* Sets the height value of our search engine, online reputation and social media images */
 .search-engine-optimization img {
-    max-height: 200px;
+    max-height: 150px;
 }
 
 .online-reputation-management img {
-    max-height: 200px;
+    max-height: 150px;
 }
 
 .social-media-marketing img {
-    max-height: 200px;
+    max-height: 150px;
 }
 
 /* Establishes the position and size of the text of all h2 within the content class (search eng. online reput. socil media) */
 .content h2 {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     font-size: 36px;
 }
 
-/* Establishes the color, position, size, text-family of the container box on the right of te page. Lead generation, brand awareness cost management) */
+/* Establishes the color, position, size, text-family of the container box on the right of the page. Lead generation, brand awareness cost management) */
 .benefits {
-    margin-right: 20px;
-    padding: 20px;
+    margin-right: 2%;
+    padding: 2%;
     clear: both;
     float: right;
-    width: 20%;
-    height: 100%;
+    max-width: 20%;
+    max-height: 16%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #2589bd;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 /* Sets the position to the margins for all the <div> elements within the class  "benefits" */
 .benefits div {
-    margin-bottom: 32px;
+    margin-bottom: 2%;
     color: #ffffff;
 }
 
 /* Sets the bottom margin and position of text of al the h3 underclass benefits*/
 .benefits h3 {
-    margin-bottom: 10px;
+    margin-bottom: 1%;
     text-align: center;
 }
 
 /* Sets the position and dimensions of the image in the benefits content box*/
 .benefits img {
     display: block;
-    margin: 5px auto;
-    max-width: 150px;
+    margin: 1%, 12.5%, 1%, 12.5%;
+    max-width: 40%;
 }
 
 /*Align <p> text in benefits class to the center */
 .benefits p {
-    text-align: center;
+    text-align: justify;
+    margin: 1%, 1%, 1%, 1%
 }
 
 /* sets properties of manufacturer of the page and its copyright*/
