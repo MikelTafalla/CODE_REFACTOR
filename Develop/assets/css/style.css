@@ -9,11 +9,6 @@
     width: block;
 }
 
-/* Set the background color of the body of the page grey */
-body {
-    background-color: #d9dcd6;
-}
-
 /* Set the color of the top of the page, above the main image, blue and its text white */
 .header {
     padding: 2%;
@@ -60,6 +55,11 @@ h1 {
 a {
     color: #ffffff;
     text-decoration: none;
+}
+
+/* Set the background color of the body of the page grey */
+body {
+    background-color: #d9dcd6;
 }
 
 /* It places the main background picture*/
