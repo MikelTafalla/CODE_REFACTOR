@@ -10,7 +10,7 @@
 }
 
 /* Set the color of the top of the page, above the main image, blue and its text white */
-.header {
+header {
     padding: 2%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #2a607c;
@@ -35,7 +35,7 @@ h1 {
 }
 
 /* Sets marings/distance of text from edges of the box. Sets text-font and size. It sets different font options in case the browser doesn't support one of them */
-.header div {
+header div {
     padding-top: 2%;
     margin-right: 0.1%;
     float: right;
@@ -44,7 +44,7 @@ h1 {
 }
 
 /* Eliminates the markers in front of our list */
-.header div li {
+header div li {
     list-style-type: none;
     display: inline-block;
     margin-left: 50px;
@@ -196,7 +196,7 @@ p {
 }
 
 /* sets properties of manufacturer of the page and its copyright*/
-.footer {
+footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
